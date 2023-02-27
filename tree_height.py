@@ -24,6 +24,8 @@ def main():
 
     if "f" in input_type:
         file_name = input()
+        if ".a" in file_name:
+                return
         with open(file_name) as f:
             lines = f.readlines()
             n = int(lines[0])
